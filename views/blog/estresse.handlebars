@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/conteudos.css">
+    <title>Estresse</title>
+</head>
+<body>
+     
+
+    <div class="corpo">
+        <h1>Estresse</h1>
+
+        <h2>O que é estresse?</h2>
+        <div class="explicacao">
+        <p class="conteudo">
+          Estresse é uma resposta do nosso organismo a determinados estímulos externos, normalmente situações súbitas, ameaçadoras ou que alteram o nosso humor habitual.  O estresse reflete, automaticamente, em uma série de sintomas físicos e emocionais em nosso corpo, que fica em estado de alerta. Por isso, é importante saber identificar a(s) causa(s) do estresse ou o que nos leva a esse estado, para, dessa forma, tratá-lo da melhor maneira!
+        </p>
+        </div>
+
+        <h2>Quais são os sintomas de estresse?</h2>
+        <div class="divConteudos">
+            <img class="imgConteudo" src="/imagens/estresseSintomas.png"/>
+        </div>
+
+        <h2>O que fazer em momentos de crise?</h2>
+        <div class="divConteudos">
+            <img class="imgConteudo" src="/imagens/Combatendo.png"/>
+        </div>
+
+        <div id="explicacao">
+        <p id="conteudo">
+             
+        </p>
+    </div>
+
+    </div>
+    
+    <footer>
+        <p></p>
+    </footer>
+
+    
+    <script>
+        document.querySelector("nav").style.display="none";
+        icon=document.querySelector("#menu");
+        icon.onclick= function(){
+            nav=document.querySelector("nav");
+            if(nav.style.display=="none")
+                nav.style.display="block";
+
+            else 
+                nav.style.display="none";
+                
+            }
+
+        x = document.querySelector("#x");
+        x.onclick=function(){
+            nav=document.querySelector("nav");
+            nav.style.display="none";
+        }
+    </script>
+</body>

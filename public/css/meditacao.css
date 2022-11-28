@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kameron,serif;
+    color:#2e377f;
+}
+.links{
+    display: none;
+}
+header{
+    display:flex;
+    background-color: #F3F3F3;
+}
+nav{
+    position:absolute;
+    width:25vw;
+    height: 120vh;
+    background-color: #F3F3F3;
+    
+    
+}
+nav #olaX{
+    background-color: #d9d9d9;
+    height: 10vh;
+    
+}
+nav #olaX h1{
+    font-size: 25px;
+    text-align: center;
+}
+nav #olaX img{
+    width: 1.5vw;
+    margin-left: 26vw;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+nav li img{
+    width: 3vw;
+    height: 6vh;
+    margin-top: 4vh;
+}
+nav li{
+    list-style: none;
+    padding:4px;
+    
+}
+nav a{
+    font-size:1.4vw;
+    text-decoration:none;
+    text-align: center;
+    margin-left: 5vw;
+}
+.cabecalho{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+    background-color: #d9d9d9;
+}
+
+#menu img{
+    margin-top: 25px;
+    width: 5vw;
+    cursor: pointer;
+}
+
+#logo img{
+    width: 8vw;
+    margin-left: 68vw;
+}
+.corpo{
+    background-color: #f3f3f3;
+    text-align: center;
+}
+#explicacao2{
+    background-color: #d9d9d9;
+    margin-bottom:50px;
+    
+}
+#explicacao{
+    background-color: #d9d9d9;
+    
+}
+/*#conteudo p{
+   margin:10px 10px 10px 10px;
+}*/
+
+#video{
+    padding-right: 28vw;
+    padding-left: 28vw;
+    
+}
+p{
+    margin:10px;
+}
+#fim{
+    background-color: #F3F3F3;
+    height: 10vh;
+  }
+  iframe{
+    margin-bottom: 10vh;
+}
+h3{
+    margin-bottom: 3vh;
+}
+
+@media only screen and (max-width: 650px){
+    #texto{
+        margin-bottom: 10vh;
+    }
+    .corpo{
+        text-align: center;
+    }
+    #explicacao{
+        margin:0px;
+        width: 60vw;
+    }
+    /*#conteudo p{
+       margin:10px 10px 10px 10px;
+    }*/
+    
+    #video{
+        padding-right: 20vw;
+        padding-left: 10vw;
+        
+    }
+    p{
+        margin:40px;
+    
+    }
+    #fim{
+        height: 10vh;
+      }
+    #texto{
+        width: 50vw;
+    }
+    iframe{
+        width:60vw;
+        height: 35vh;
+        margin-right: 50vw;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .corpo{
+        width: 0;
+        margin:0;
+    }
+
+    .links{
+        display: none;
+    }
+
+
+
+
+
+    .img{
+        width: 4.9rem;
+        height: 4.9rem;
+        margin:1rem;
+    }
+    .cabecalho{
+      margin-bottom: 7rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      justify-content: center;
+      align-content: start;
+    }
+    #logo img{
+        width: 7rem;
+        height: 7rem;
+        margin-left: 50vw;
+      }
+    nav a{
+      font-size:0.9rem;
+      text-decoration:none;
+      text-align: center;
+      margin-left: 4vw;
+    }
+    .navimg{
+      width: 3rem;
+      height: 3rem;
+      margin: 2rem, 0, 2rem, 0;
+    }
+    img{
+      margin-left: 1rem;
+      width: 3rem;
+      height: 3rem;
+    }
+    nav #olaX img{
+      width: 3vw;
+      height: 3vh;
+    }
+    
+    nav #olaX h1{
+      font-size: 15px;
+      text-align: start;
+    }
+      
+
+    .corpo{
+        background-color: #f3f3f3;
+        text-align: center;
+    }
+    #explicacao2{
+        background-color: #d9d9d9;
+        margin-bottom:50px;
+        width: 60vw;
+        margin: 0;
+        
+    }
+    /*#conteudo p{
+       margin:10px 10px 10px 10px;
+    }*/
+    
+    #video{
+        padding-right: 28vw;
+        padding-left: 28vw;
+        
+    }
+    h3{
+        width: 50vw;
+    }
+    
+    
+}

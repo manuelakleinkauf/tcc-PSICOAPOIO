@@ -1,0 +1,213 @@
+<h1>Teste de Ansiedade</h1>
+
+<link rel="stylesheet" href="/css/testeAnsiedade.css">
+
+<form name="quiz" id="quiz">
+    <div id="a">
+        <p>Você sente que tem dificuldade para se concentrar?</p>
+        <p><input type="radio" name="questao1" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao1" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao1" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="b">
+        <p>Você sente que está “no limite”?</p>
+        <p><input type="radio" name="questao2" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao2" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao2" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="c">
+        <p>Você sente que é incapaz de relaxar?</p>
+        <p><input type="radio" name="questao3" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao3" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao3" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="d">
+        <p>Você sente a sensação de cabeça leve frequentemente?</p>
+        <p><input type="radio" name="questao4" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao4" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao4" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="e">
+        <p>Você sofre de suor excessivo?</p>
+        <p><input type="radio" name="questao5" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao5" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao5" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="f">
+        <p>Você já sofreu de taquicardia(aumento da frequência cardíaca) ou taquipnéia(respiração acelerada)?</p>
+        <p><input type="radio" name="questao6" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao6" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao6" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="g">
+        <p>Você sente desconforto, tonturas e boca seca frequentemente?</p>
+        <p><input type="radio" name="questao7" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao7" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao7" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="h">
+        <p>Você tem dificuldade em ficar parado por muito tempo?</p>
+        <p><input type="radio" name="questao8" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao8" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao8" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="i">
+        <p>Sente que se preocupa antecipadamente com as coisas?</p>
+        <p><input type="radio" name="questao9" value="sim" required="required">Sim</p>
+        <p><input type="radio" name="questao9" value="nSei" required="required">Não Sei</p>
+        <p><input type="radio" name="questao9" value="nao" required="required">Nao</p>
+    </div>
+
+    <div id="j">
+        <p>Você sente dores de cabeça e tremores frequentemente?</p>
+        <p><input type="radio" name="questao10" value="sim" required >Sim</p>
+        <p><input type="radio" name="questao10" value="nSei" required>Não Sei</p>
+        <p><input type="radio" name="questao10" value="nao" required>Nao</p>
+    </div>
+
+    <input id="result" type="button" value="Enviar" onclick="resultado()">
+</form>
+
+<p id="resultado"></p>
+<p id="p1">Recomenda-se consultar os conteúdos do site e interagir com usuários que estejam passando pela mesma situação. Caso julgue necessário, consulte a área de contato de psicólogos do site(considerando que os dados desta autoavaliação não são de cunho profissional) </p>
+
+
+
+
+<script>
+    function resultado(){
+        
+        var i = 0
+        var q1 = document.quiz.questao1.value
+       if(q1==''){
+          document.querySelector("#a").style.border="fd001b";
+          return false
+       }
+        var q2 = document.quiz.questao2.value
+        if(q2==''){
+          document.querySelector("#b").style.border = "thick solid #fd001b";
+          return false
+       }
+        var q3 = document.quiz.questao3.value
+        if(q3==''){
+          document.querySelector("#c").style.border="thick solid #fd001b";
+          return false
+       }
+        var q4 = document.quiz.questao4.value
+        if(q4==''){
+          document.querySelector("#d").style.border = "thick solid #fd001b";
+          return false
+       }
+        var q5 = document.quiz.questao5.value
+        if(q5==''){
+          document.querySelector("#e").style.border = "thick solid #fd001b";
+          return false
+       }
+        var q6 = document.quiz.questao6.value
+        if(q6==''){
+          document.querySelector("#f").style.border = "thick solid #fd001b";
+          return false
+       }
+        var q7 = document.quiz.questao7.value
+        if(q7==''){
+          document.querySelector("#g").style.border = "thick solid #fd001b";
+          return false
+       }
+        var q8 = document.quiz.questao8.value
+        if(q8==''){
+          document.querySelector("#h").style.border = "thick solid #fd001b";
+          return false
+       }
+        var q9 = document.quiz.questao9.value
+        if(q9==''){
+          document.querySelector("#i").style.border = "thick solid #fd001b";
+          return false
+       }
+        var q10 = document.quiz.questao10.value
+        if(q10==''){
+          document.querySelector("#j").style.border = "thick solid #fd001b";
+          return false
+       }
+
+        var resultado = document.getElementById('resultado')
+        var quiz = document.getElementById('quiz')
+
+
+        if(q1 == "sim" ){
+            i=i+1
+        }else if(q1 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q2 == "sim" ){
+            i=i+1
+        }else if(q2 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q3 == "sim" ){
+            i=i+1
+        }else if(q3 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q4 == "sim" ){
+            i=i+1
+        }else if(q4 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q5 == "sim" ){
+            i=i+1
+        }else if(q5 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q6 == "sim" ){
+            i=i+1
+        }else if(q6 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q7 == "sim" ){
+            i=i+1
+        }else if(q7 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q8 == "sim" ){
+            i=i+1
+        }else if(q8 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q9 == "sim" ){
+            i=i+1
+        }else if(q9 == "nSei"){
+            i=i+0.5
+        }
+
+        if(q10 == "sim" ){
+            i=i+1
+        }else if(q10 == "nSei"){
+            i=i+0.5
+        }
+
+
+        var p1 = document.getElementById('p1')
+      
+       
+        p1.style.display="flex"
+        quiz.style.display="none"
+        
+        resultado.textContent = i+"/10"
+    }
+</script>

@@ -1,0 +1,142 @@
+#resultado{
+    margin-left: 4vw;
+    text-align: center;
+}
+#p1{
+    display: none;
+    text-align: center;
+    margin-left:4vw;
+    margin-right: 4vw;
+}
+h1{
+    text-align: center;
+}
+form {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 500px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+form div + div {
+    margin-top: 3em;
+}
+p input {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 30px;
+    text-align: left;
+}
+#result{
+    width: 7vw;
+    height: 5vh;
+    margin-top: 5vh;
+    margin-left: 13vw;
+    background:#fbc4c3;
+    font-weight: bold;
+    color:#2e377f;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 650px){
+    .img{
+        width: 4.9rem;
+        height: 4.9rem;
+        margin:1rem;
+    }
+    .cabecalho{
+      margin-bottom: 2vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      justify-content: center;
+      align-content: start;
+    }
+    #logo img{
+        width: 7rem;
+        height: 7rem;
+        margin-left: 50vw;
+      }
+    nav a{
+      font-size:0.9rem;
+      text-decoration:none;
+      text-align: center;
+      margin-left: 4vw;
+    }
+    .navimg{
+      width: 3rem;
+      height: 3rem;
+      margin: 2rem, 0, 2rem, 0;
+    }
+    img{
+      margin-left: 1rem;
+      width: 3rem;
+      height: 3rem;
+    }
+    nav #olaX img{
+      width: 3vw;
+      height: 3vh;
+    }
+    
+    nav #olaX h1{
+      font-size: 15px;
+      text-align: start;
+    }
+    @media only screen and (max-width: 650px){
+      .img{
+          width: 4.9rem;
+          height: 4.9rem;
+          margin:1rem;
+      }
+      .cabecalho{
+        margin-bottom: 2vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        justify-content: center;
+        align-content: start;
+      }
+      #logo img{
+          width: 7rem;
+          height: 7rem;
+          margin-left: 50vw;
+        }
+      nav a{
+        font-size:0.9rem;
+        text-decoration:none;
+        text-align: center;
+        margin-left: 4vw;
+      }
+      .navimg{
+        width: 3rem;
+        height: 3rem;
+        margin: 2rem, 0, 2rem, 0;
+      }
+      img{
+        margin-left: 1rem;
+        width: 3rem;
+        height: 3rem;
+      }
+      nav #olaX img{
+        width: 3vw;
+        height: 3vh;
+      }
+      
+      nav #olaX h1{
+        font-size: 15px;
+        text-align: start;
+      }
+  
+  
+      form {
+          width: 300px;
+      }
+      
+      #result{
+          margin-left: 25vw;
+          width: 18vw;
+          height: 5vh;
+      }
+}
+}
